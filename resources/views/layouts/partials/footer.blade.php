@@ -22,7 +22,7 @@
                     <li><a href="{{ route('profil.index') }}" class="hover:text-action transition-colors">Profil kantor</a></li>
                     <li><a href="{{ route('layanan.index') }}" class="hover:text-action transition-colors">Layanan</a></li>
                     <li><a href="{{ route('berita.index') }}" class="hover:text-action transition-colors">Publikasi & peraturan</a></li>
-                    <li><a href="{{ route('kontak') }}" class="hover:text-action transition-colors">Pengaduan</a></li>
+                    <li><a href="{{ route('kontak.pengaduan') }}" class="hover:text-action transition-colors">Pengaduan</a></li>
                 </ul>
             </div>
 
