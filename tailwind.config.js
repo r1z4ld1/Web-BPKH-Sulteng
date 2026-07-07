@@ -7,22 +7,26 @@ module.exports = {
     "./resources/**/*.js",
   ],
   theme: {
+    screens: {
+      ...defaultTheme.screens,
+      'nav': '1000px', // breakpoint khusus navbar, lebih rendah & aman dari xl
+    },
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#2F5D45',   // Hijau Tajuk Hutan — header, footer, elemen struktural
-          dark: '#1F3327',      // varian lebih gelap untuk hover state
-          light: '#3E7358',     // varian lebih terang untuk hover state di dark bg
-        },
-        secondary: '#6E9B76',   // Hijau Lumut — aksen, ikon, garis pemisah
-        highlight: '#8B5E34',   // Cokelat Tanah — penanda kategori (dipakai langka)
-        action: {
-          DEFAULT: '#C89B3C',   // Emas Senja — CTA, link aktif
-          dark: '#AD8330',      // hover state tombol CTA
-        },
-        base: '#F5F3EC',        // Krem Hangat — latar belakang utama
-        contrast: '#16241C',    // Hijau Tinta Gelap — section kontras tinggi
-      },
+  primary: {
+    DEFAULT: '#2F5D45',
+    dark: '#1F3327',
+    light: '#3E7358',
+  },
+  secondary: '#6E9B76',
+  highlight: '#8B5E34',
+  action: {
+    DEFAULT: '#C89B3C',
+    dark: '#AD8330',
+  },
+  canvas: '#F5F3EC',   // sebelumnya 'base', diganti agar tidak bentrok dengan text-base bawaan Tailwind
+  contrast: '#16241C',
+},
       fontFamily: {
         serif: ['Fraunces', 'serif'],       // judul/heading
         sans: ['Inter', 'sans-serif'],      // teks isi
