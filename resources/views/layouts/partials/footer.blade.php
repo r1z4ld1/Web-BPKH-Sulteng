@@ -5,10 +5,10 @@
             {{-- Kolom 1: Identitas --}}
             <div>
                 <div class="flex items-center gap-2 mb-3">
-                    <svg class="w-5 h-5 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2L4 14h5l-3 8 11-14h-5l3-6z"/>
-                    </svg>
-                    <span class="font-serif font-medium text-white">BPKH Kota Palu</span>
+                    <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shrink-0">
+                        <img src="{{ asset('images/logo/logo-kemenhut.png') }}" alt="Logo Kemenhut" class="w-5 h-5 object-contain">
+                    </div>
+                    <span class="font-serif font-small text-white">BPKH Wilayah XVI</span>
                 </div>
                 <p class="text-sm leading-relaxed text-secondary">
                     Balai Pemantapan Kawasan Hutan wilayah Sulawesi Tengah, di bawah Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan.
@@ -19,7 +19,7 @@
             <div>
                 <p class="text-sm font-medium text-white mb-3">Tautan cepat</p>
                 <ul class="space-y-2 text-sm text-secondary">
-                    <li><a href="{{ route('profil.index') }}" class="hover:text-action transition-colors">Profil kantor</a></li>
+                    <li><a href="{{ route('home') }}" class="hover:text-action transition-colors">Beranda</a></li>
                     <li><a href="{{ route('layanan.index') }}" class="hover:text-action transition-colors">Layanan</a></li>
                     <li><a href="{{ route('berita.index') }}" class="hover:text-action transition-colors">Publikasi & peraturan</a></li>
                     <li><a href="{{ route('kontak.pengaduan') }}" class="hover:text-action transition-colors">Pengaduan</a></li>
@@ -35,20 +35,20 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4-4-7-7.5-7-11a7 7 0 1114 0c0 3.5-3 7-7 11z"/>
                             <circle cx="12" cy="10" r="2.5"/>
                         </svg>
-                        <span>Jl. Contoh Alamat No. 1, Palu, Sulawesi Tengah</span>
+                        <span>Jl. DR. Abdurrahman Saleh No.18, Birobuli Utara, Kec. Palu Sel., Kota Palu, Sulawesi Tengah 94111</span>
                     </li>
                     <li class="flex gap-2">
                         <svg class="w-4 h-4 mt-0.5 shrink-0 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5c0 9 7 16 16 16l2-4-6-2-2 2c-2-1-4-3-5-5l2-2-2-6-4 1z"/>
                         </svg>
-                        <span>(0451) 000000</span>
+                        <span>(0451) 485050</span>
                     </li>
                     <li class="flex gap-2">
                         <svg class="w-4 h-4 mt-0.5 shrink-0 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
                             <rect x="3" y="5" width="18" height="14" rx="2"/>
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6"/>
                         </svg>
-                        <span>info@bpkhpalu.go.id</span>
+                        <span>bpkhxvi@gmail.com</span>
                     </li>
                 </ul>
             </div>

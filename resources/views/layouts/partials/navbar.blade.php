@@ -54,7 +54,7 @@
            {{-- Logo --}}
 <a href="{{ route('home') }}" class="flex items-center gap-3 group shrink-0">
     <div class="w-9 h-9 nav:w-10 nav:h-10 rounded-lg bg-primary flex items-center justify-center shrink-0 transition-transform duration-200 ease-smooth group-hover:scale-105">
-        <img src="{{ asset('logo/logo-kemenhut.png') }}" alt="Logo Kemenhut" class="w-6 h-6 nav:w-7 nav:h-7 object-contain">
+        <img src="{{ asset('images/logo/logo-kemenhut.png') }}" alt="Logo Kemenhut" class="w-6 h-6 nav:w-7 nav:h-7 object-contain">
     </div>
     <div class="leading-tight hidden sm:block whitespace-nowrap">
         <p class="font-serif font-medium text-base text-contrast">BPKH Wilayah XVI</p>
@@ -82,8 +82,8 @@
                         <path stroke-linecap="round" d="m20 20-3.5-3.5"/>
                     </svg>
                 </button>
-                <a href="{{ route('kontak.janji-temu') }}" class="btn-cta whitespace-nowrap">
-                    Janji Temu
+                <a href="{{ route('login') }}" class="btn-cta whitespace-nowrap">
+                    Masuk
                 </a>
             </div>
 
