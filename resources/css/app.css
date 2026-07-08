@@ -32,3 +32,13 @@
            transition-all duration-200 ease-smooth hover:bg-action-dark hover:-translate-y-0.5;
   }
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
