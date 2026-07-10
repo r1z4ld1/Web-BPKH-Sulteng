@@ -6,8 +6,8 @@
         ['label' => 'Struktur Organisasi', 'url' => route('profil.struktur')],
         ['label' => 'Motto', 'url' => route('profil.motto')],
         ['label' => 'Core Values ASN BerAKHLAK', 'url' => route('profil.core-values')],
-        ['label' => 'Pembangunan Zona Integritas', 'url' => route('profil.zi')],
-        ['label' => 'Benturan Kepentingan', 'url' => route('profil.benturan-kepentingan')],
+       /* ['label' => 'Pembangunan Zona Integritas', 'url' => route('profil.zi')],
+        ['label' => 'Benturan Kepentingan', 'url' => route('profil.benturan-kepentingan')],*/
     ];
 
     $menuLayanan = [
@@ -129,7 +129,7 @@
             <x-mobile-nav-accordion label="Hubungi Kami" :items="$menuKontak" />
         </div>
         <div class="px-4 py-4">
-            <a href="{{ route('kontak.janji-temu') }}" class="btn-cta w-full justify-center">Janji Temu</a>
+            <a href="{{ route('login') }}" class="btn-cta w-full justify-center">Masuk</a>
         </div>
     </div>
 </header>

@@ -22,7 +22,7 @@
         total: {{ count($layananUnggulan) }},
         timer: null,
         start() {
-            this.timer = setInterval(() => this.next(), 3500)
+            this.timer = setInterval(() => this.next(), 2500)
         },
         stop() {
             clearInterval(this.timer)

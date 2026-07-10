@@ -48,7 +48,7 @@
                             <rect x="3" y="5" width="18" height="14" rx="2"/>
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6"/>
                         </svg>
-                        <span>bpkhxvi@gmail.com</span>
+                        <span><a href="mailto:bpkh.wil16@kehutanan.go.id" class="text-secondary hover:text-action transition-colors">bpkh.wil16@kehutanan.go.id</a></span>
                     </li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="border-t border-secondary/20 mt-10 pt-6 text-center text-xs text-secondary">
-            &copy; {{ date('Y') }} Balai Pemantapan Kawasan Hutan Kota Palu. Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan.
+            &copy; {{ date('Y') }} Balai Pemantapan Kawasan Hutan Wilayah XVI. Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan RI.
         </div>
     </div>
 </footer>
