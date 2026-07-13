@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\LayananController;
 
 // resources/views/pages/home.blade.php
 Route::get('/', function () {
@@ -14,8 +15,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //link ke halaman tentang profil dimenu dripdown navbar
 Route::prefix('profil')->name('profil.')->group(function () {
-    Route::get('/', fn () => view('pages.home'))->name('index'); // masih placeholder, belum jadi prioritas
-    Route::get('/sejarah', [ProfilController::class, 'sejarah'])->name('sejarah'); // sudah aktif
+    Route::get('/', fn () => view('pages.home'))->name('index');
+    Route::get('/sejarah', [ProfilController::class, 'sejarah'])->name('sejarah');
     Route::get('/tugas-fungsi', fn () => view('pages.home'))->name('tugas-fungsi');
     Route::get('/visi-misi', fn () => view('pages.home'))->name('visi-misi');
     Route::get('/struktur-organisasi', fn () => view('pages.home'))->name('struktur');
@@ -33,9 +34,11 @@ Route::prefix('profil')->name('profil.')->group(function () {
 //link ke halaman layanan dimenu dripdown navbar
 Route::prefix('layanan')->name('layanan.')->group(function () {
     Route::get('/', fn () => view('pages.home'))->name('index');
-    Route::get('/peta-interaktif', fn () => view('pages.home'))->name('peta');
-    Route::get('/konsultasi', fn () => view('pages.home'))->name('konsultasi');
+    Route::get('/alur-pelayanan', [LayananController::class, 'alurPelayanan'])->name('alur');
+    Route::get('/proses-ppkh', fn () => view('pages.home'))->name('ppkh');
+    Route::get('/sipadu', fn () => view('pages.home'))->name('sipadu');
     Route::get('/survei-kepuasan', fn () => view('pages.home'))->name('survei');
+    Route::get('/kebijakan-mutu', fn () => view('pages.home'))->name('kebijakan-mutu');
 });
 
 //link ke halaman berita dimenu dripdown navbar
@@ -48,16 +51,20 @@ Route::prefix('berita')->name('berita.')->group(function () {
 Route::prefix('publikasi')->name('publikasi.')->group(function () {
     Route::get('/peraturan', fn () => view('pages.home'))->name('peraturan');
     Route::get('/penghargaan', fn () => view('pages.home'))->name('penghargaan');
+    Route::get('/dokumentasi', fn () => view('pages.home'))->name('dokumentasi');
 });
 
 //link ke halaman kontak dimenu dripdown navbar
 Route::prefix('kontak')->name('kontak.')->group(function () {
     Route::get('/', fn () => view('pages.home'))->name('index');
-    Route::get('/formulir', fn () => view('pages.home'))->name('formulir');
+    Route::get('/whatsapp', fn () => view('pages.home'))->name('whatsapp');
     Route::get('/pengaduan', fn () => view('pages.home'))->name('pengaduan');
-    Route::get('/wbs', fn () => view('pages.home'))->name('wbs');
+    Route::get('/ipk', fn () => view('pages.home'))->name('ipk');
     Route::get('/janji-temu', fn () => view('pages.home'))->name('janji-temu');
 });
+
+//link ke halaman peta interaktif dari halaman beranda
+Route::get('/peta-interaktif', fn () => view('pages.home'))->name('layanan.peta');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
