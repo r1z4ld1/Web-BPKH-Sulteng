@@ -10,24 +10,39 @@ class ProfilController extends Controller
     {
         $milestones = [
             [
-                'tahun' => '2008',
-                'judul' => 'Cikal bakal unit kerja kehutanan wilayah',
+                'tahun' => 'Periode 01 (2007-2009)',
+                'judul' => 'Cikal bakal unit kerja kehutanan wilayah XVI Palu',
                 'deskripsi' => 'Dibentuk unit kerja awal yang menangani inventarisasi dan tata batas kawasan hutan di wilayah Sulawesi Tengah, sebagai bagian dari struktur kehutanan pusat.',
             ],
             [
-                'tahun' => '2011',
+                'tahun' => 'Periode 02 (2009-2012)',
                 'judul' => 'Penetapan sebagai Balai Pemantapan Kawasan Hutan',
                 'deskripsi' => 'Melalui restrukturisasi organisasi Kementerian Kehutanan, unit kerja ini ditetapkan secara resmi sebagai Balai Pemantapan Kawasan Hutan dengan wilayah kerja Sulawesi Tengah.',
             ],
             [
-                'tahun' => '2015',
+                'tahun' => 'Periode 03 (2012-2014)',
                 'judul' => 'Integrasi ke Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan',
                 'deskripsi' => 'Mengikuti perubahan nomenklatur kementerian, BPKH berada di bawah koordinasi Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan.',
             ],
             [
-                'tahun' => '2022-Sekarang',
+                'tahun' => 'Periode 04 (2014--2016)',
                 'judul' => 'Modernisasi layanan publik',
                 'deskripsi' => 'Menghadirkan layanan digital untuk mempermudah akses masyarakat terhadap informasi dan permohonan terkait kawasan hutan.',
+            ],
+            [
+                'tahun' => 'Periode 05 (2016-2019)',
+                'judul' => 'Penguatan kapasitas SDM dan infrastruktur',
+                'deskripsi' => 'Meningkatkan kompetensi staf dan memperkuat fasilitas teknis untuk mendukung pengelolaan kawasan hutan yang lebih efektif.',
+            ],
+            [
+                'tahun' => 'Periode 06 (2019-2024)',
+                'judul' => 'Kolaborasi lintas sektor',
+                'deskripsi' => 'Bekerja sama dengan pemerintah daerah, lembaga penelitian, dan masyarakat untuk pengelolaan kawasan hutan yang berkelanjutan.',
+            ],
+            [
+                'tahun' => 'Periode 07 (2024-Sekarang)',
+                'judul' => 'Transformasi digital dan inovasi layanan',
+                'deskripsi' => 'Mengimplementasikan sistem informasi berbasis digital untuk meningkatkan transparansi, efisiensi, dan kualitas layanan publik terkait kawasan hutan.',
             ],
         ];
 
