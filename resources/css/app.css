@@ -41,4 +41,52 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+
+/* DASHBOARD COMPONENT PEGAWAI */
+
+    .sidebar-bpkh {
+        @apply fixed left-0 top-0 h-screen w-64 bg-primary text-white;
+    }
+
+    .sidebar-link {
+        @apply flex items-center gap-3 px-6 py-3 text-sm text-white/90
+transition duration-200 hover:bg-secondary;
+    }
+
+    .card-dashboard {
+        @apply rounded-xl bg-white shadow-sm p-6 transition duration-300 hover:-translate-y-1;
+    }
+
+    .card-header-bpkh {
+        @apply rounded-t-xl bg-primary px-5 py-4 text-white font-semibold;
+    }
+
+    .stat-number {
+        @apply text-3xl font-bold text-contrast;
+    }
+
+    .menu-card {
+        @apply rounded-xl border border-primary/20 bg-white p-5
+transition duration-300 hover:shadow-lg hover:-translate-y-1;
+    }
+
+    .btn-menu-primary {
+        @apply rounded-lg border-2 border-primary px-4 py-4 text-center
+font-medium text-primary transition hover:bg-primary hover:text-white;
+    }
+
+    .btn-menu-action {
+        @apply rounded-lg bg-action px-4 py-4 text-center
+font-medium text-white transition hover:bg-action-dark;
+    }
+
+    .info-card {
+        @apply rounded-xl bg-white shadow-sm overflow-hidden;
+    }
+
+    .info-title {
+        @apply bg-primary px-5 py-3 text-white font-semibold;
+    }
 }
+
