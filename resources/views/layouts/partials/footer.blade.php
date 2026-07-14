@@ -35,13 +35,13 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4-4-7-7.5-7-11a7 7 0 1114 0c0 3.5-3 7-7 11z"/>
                             <circle cx="12" cy="10" r="2.5"/>
                         </svg>
-                        <span>Jl. DR. Abdurrahman Saleh No.18, Birobuli Utara, Kec. Palu Sel., Kota Palu, Sulawesi Tengah 94111</span>
+                        <span><a href="https://www.google.com/maps/place/Balai+Pemantapan+Kawasan+Hutan+(BPKH)+Wilayah+XVI+Palu/@-0.9190714,119.8916422,17z/data=!3m1!4b1!4m6!3m5!1s0x2d8bf1e1eaaac74f:0x27d283c93b30ee6d!8m2!3d-0.9190714!4d119.8942171!16s%2Fg%2F1pzpm715q?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Jl. DR. Abdurrahman Saleh No.18, Birobuli Utara, Kec. Palu Sel., Kota Palu, Sulawesi Tengah 94111</a></span>
                     </li>
                     <li class="flex gap-2">
                         <svg class="w-4 h-4 mt-0.5 shrink-0 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5c0 9 7 16 16 16l2-4-6-2-2 2c-2-1-4-3-5-5l2-2-2-6-4 1z"/>
                         </svg>
-                        <span>(0451) 485050</span>
+                        <span><a href="tel:(0451) 485050">(0451) 485050</a></span>
                     </li>
                     <li class="flex gap-2">
                         <svg class="w-4 h-4 mt-0.5 shrink-0 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
@@ -65,6 +65,9 @@
                     </a>
                     <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-action transition-colors duration-200">
                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l6 3-6 3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-action transition-colors duration-200">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9.5 2C9.5 2 9.5 8.5 15.5 8.5V12C15.5 12 11.5 12 11.5 16C11.5 19.3 14.2 22 17.5 22C20.8 22 23.5 19.3 23.5 16C23.5 12.7 20.8 10 17.5 10C17.1 10 16.7 10.1 16.3 10.2V6H13V2H9.5Z"/></svg>
                     </a>
                 </div>
             </div>

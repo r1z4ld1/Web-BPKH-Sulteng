@@ -6,25 +6,26 @@
         ['label' => 'Struktur Organisasi', 'url' => route('profil.struktur')],
         ['label' => 'Motto', 'url' => route('profil.motto')],
         ['label' => 'Core Values ASN BerAKHLAK', 'url' => route('profil.core-values')],
-       /* ['label' => 'Pembangunan Zona Integritas', 'url' => route('profil.zi')],
-        ['label' => 'Benturan Kepentingan', 'url' => route('profil.benturan-kepentingan')],*/
     ];
 
     $menuLayanan = [
-        ['label' => 'Peta Interaktif Wilayah Kerja', 'url' => route('layanan.peta')],
-        ['label' => 'Pojok Konsultasi', 'url' => route('layanan.konsultasi')],
+        ['label' => 'Alur Pelayanan', 'url' => route('layanan.alur')],
+        ['label' => 'Proses PPKH', 'url' => route('layanan.ppkh')],
+        ['label' => 'Sistem Pelayanan Terpadu', 'url' => route('layanan.sipadu')],
         ['label' => 'Survei Kepuasan Masyarakat', 'url' => route('layanan.survei')],
+        ['label' => 'Kebijakan Mutu', 'url' => route('layanan.kebijakan-mutu')],
     ];
 
     $menuPublikasi = [
         ['label' => 'Peraturan', 'url' => route('publikasi.peraturan')],
         ['label' => 'Penghargaan', 'url' => route('publikasi.penghargaan')],
+        ['label' => 'Dokumentasi Kegiatan', 'url' => route('publikasi.dokumentasi')],
     ];
 
     $menuKontak = [
-        ['label' => 'Formulir Kontak', 'url' => route('kontak.formulir')],
+        ['label' => 'Lentera BPKH 16 Palu', 'url' => route('kontak.whatsapp')],
+        ['label' => 'Survei Persepsi Anti Korupsi', 'url' => route('kontak.ipk')],
         ['label' => 'Pengaduan Masyarakat', 'url' => route('kontak.pengaduan')],
-        ['label' => 'Whistle Blowing System', 'url' => route('kontak.wbs')],
     ];
 @endphp
 
