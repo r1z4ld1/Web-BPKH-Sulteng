@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\LayananController;
+use App\Http\Controllers\PegawaiController;
 
 // resources/views/pages/home.blade.php
 Route::get('/', function () {
@@ -65,6 +66,30 @@ Route::prefix('kontak')->name('kontak.')->group(function () {
 
 //link ke halaman peta interaktif dari halaman beranda
 Route::get('/peta-interaktif', fn () => view('pages.home'))->name('layanan.peta');
+
+//routes dashboard pegawai
+Route::prefix('pegawai')->group(function () {
+
+    Route::get(
+        '/dashboard',
+        [PegawaiController::class, 'dashboard']
+    )
+        ->name('pegawai.dashboard');
+
+    // ROUTE PEGAWAI TARUH DISINI
+
+    Route::prefix('pegawai')->group(function () {
+
+        Route::get(
+            '/dashboard',
+            [PegawaiController::class, 'dashboard']
+        )
+            ->name('pegawai.dashboard');
+
+    });
+
+
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
