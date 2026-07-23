@@ -13,20 +13,22 @@
 
    {{-- VISI - panel gelap dengan kutipan besar --}}
     <section class="relative overflow-hidden bg-contrast py-14 sm:py-18 lg:py-24">
-        {{-- Aksen kontur tipis --}}
-        <svg class="hidden lg:block absolute -left-16 -bottom-16 w-80 h-80 opacity-[0.07]" viewBox="0 0 260 260" fill="none" aria-hidden="true">
-            <circle cx="130" cy="130" r="20" stroke="#F5F3EC" stroke-width="1"/>
+        <svg class="hidden lg:block absolute -left-16 -bottom-16 w-80 h-80  opacity-10 transition-transform duration-1000 hover:scale-105 hover:rotate-3" viewBox="0 0 260 260" fill="none" aria-hidden="true">
+            <circle cx="130" cy="130" r="20" stroke="#F5F3EC" stroke-width="1" stroke-dasharray="4 4" class="animate-[spin_20s_linear_infinite] origin-center"/>
             <circle cx="130" cy="130" r="40" stroke="#F5F3EC" stroke-width="1"/>
             <circle cx="130" cy="130" r="60" stroke="#F5F3EC" stroke-width="1"/>
             <circle cx="130" cy="130" r="95" stroke="#F5F3EC" stroke-width="1"/>
             <circle cx="130" cy="130" r="128" stroke="#C89B3C" stroke-width="1"/>
-            <circle cx="130" cy="130" r="140" stroke="#C89B3C" stroke-width="1"/>
+            <circle cx="130" cy="130" r="140" stroke="#C89B3C" stroke-width="1" stroke-dasharray="8 8" class="animate-[spin_30s_linear_infinite_reverse] origin-center"/>
         </svg>
 
-        <div class="relative mx-auto max-w-4xl px-6 sm:px-8 lg:px-12 text-center">
-            <p class="font-mono text-xs text-secondary uppercase tracking-widest mb-6">
+        <div  class="relative mx-auto max-w-4xl px-6 sm:px-8 lg:px-12 text-center z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-6">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                 <p class="font-mono text-xs text-secondary uppercase tracking-widest">
                 Visi Balai Pemantapan Kawasan Hutan Wilayah XVI
-            </p>
+                 </p>
+            </div>
 
             <svg class="w-8 h-8 text-action/40 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9.5 6C6.5 6 4 8.5 4 11.5c0 2.8 2.1 5 4.8 5.3-.3 1.4-1.3 2.6-2.8 3.2l.4 1.5c3.1-.8 5.1-3.2 5.1-6.5V11c0-2.8-2-5-4-5zm10 0c-3 0-5.5 2.5-5.5 5.5 0 2.8 2.1 5 4.8 5.3-.3 1.4-1.3 2.6-2.8 3.2l.4 1.5c3.1-.8 5.1-3.2 5.1-6.5V11c0-2.8-2-5-4-5z" opacity=".85"/>
@@ -75,7 +77,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
-                <h2 class="font-serif font-medium text-xl sm:text-2xl">Misi</h2>
+                <h2 class="font-serif text-4xl lg:text-2xl font-semibold">Misi</h2>
             </div>
 
             <div class="space-y-5">

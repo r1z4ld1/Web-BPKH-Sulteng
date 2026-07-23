@@ -12,19 +12,22 @@
 
     {{-- PERNYATAAN BESAR --}}
     <section class="relative overflow-hidden bg-contrast py-14 sm:py-18 lg:py-24">
-        <svg class="hidden lg:block absolute -right-20 -top-20 w-96 h-96 opacity-[0.06]" viewBox="0 0 260 260" fill="none" aria-hidden="true">
-            <circle cx="130" cy="130" r="20" stroke="#F5F3EC" stroke-width="1"/>
+       <svg class="hidden lg:block absolute -right-20 -bottom-16 w-80 h-80  opacity-10 transition-transform duration-1000 hover:scale-105 hover:rotate-3" viewBox="0 0 260 260" fill="none" aria-hidden="true">
+            <circle cx="130" cy="130" r="20" stroke="#F5F3EC" stroke-width="1" stroke-dasharray="4 4" class="animate-[spin_20s_linear_infinite] origin-center"/>
             <circle cx="130" cy="130" r="40" stroke="#F5F3EC" stroke-width="1"/>
             <circle cx="130" cy="130" r="60" stroke="#F5F3EC" stroke-width="1"/>
             <circle cx="130" cy="130" r="95" stroke="#F5F3EC" stroke-width="1"/>
             <circle cx="130" cy="130" r="128" stroke="#C89B3C" stroke-width="1"/>
-            <circle cx="130" cy="130" r="140" stroke="#C89B3C" stroke-width="1"/>
+            <circle cx="130" cy="130" r="140" stroke="#C89B3C" stroke-width="1" stroke-dasharray="8 8" class="animate-[spin_30s_linear_infinite_reverse] origin-center"/>
         </svg>
 
-        <div class="relative mx-auto max-w-4xl px-6 sm:px-8 lg:px-12 text-center">
-            <p class="font-mono text-xs text-secondary uppercase tracking-widest mb-8">
+        <div class="relative mx-auto max-w-4xl px-6 sm:px-8 lg:px-12 text-center z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-6">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                 <p class="font-mono text-xs text-secondary uppercase tracking-widest">
                 Motto Balai Pemantapan Kawasan Hutan Wilayah XVI
-            </p>
+                 </p>
+            </div>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 flex-wrap">
                 <span class="font-serif font-medium text-3xl sm:text-5xl lg:text-6xl text-primary-light">Sigap<span class="text-white/20">,</span></span>

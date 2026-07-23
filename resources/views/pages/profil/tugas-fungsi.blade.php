@@ -75,7 +75,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M6 21V5a1 1 0 011-1h4a1 1 0 011 1v16M14 21V9a1 1 0 011-1h4a1 1 0 011 1v12"/>
                         </svg>
                     </div>
-                    <h2 class="font-serif font-semibold text-2xl lg:text-3xl text-[#16241C]">Bagian di Lingkungan Kantor</h2>
+                    <h2 class="font-serif text-4xl lg:text-2xl font-semibold">Bagian di Lingkungan Kantor</h2>
                 </div>
 
                 {{-- Deskripsi dengan margin disesuaikan agar sejajar dengan teks judul --}}
@@ -129,7 +129,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
                     </div>
-                    <h2 class="font-serif font-semibold text-2xl lg:text-3xl text-[#16241C]">Wilayah Kerja</h2>
+                    <h2 class="font-serif text-4xl lg:text-2xl font-semibold">Wilayah Kerja</h2>
                 </div>
                 <p class="text-sm md:text-base text-[#16241C]/70 mb-8 ml-14">Provinsi Sulawesi Tengah — 1 kota dan 12 kabupaten.</p>
 
@@ -197,7 +197,7 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-sm font-medium text-white">Peraturan Menteri Nomor 3 Tahun 2025</p>
+                        <p class="text-sm font-serif text-white">Peraturan Menteri Nomor 3 Tahun 2025</p>
                         <p class="text-xs text-secondary mt-0.5">Tentang Organisasi dan Tata Kerja Balai Pemantapan Kawasan Hutan</p>
                     </div>
                 </div>

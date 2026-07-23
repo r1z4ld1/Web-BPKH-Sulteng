@@ -21,7 +21,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v18M4 8h5m-5 5h5m6-10v18m0-14h5m-5 5h5"/>
                         </svg>
                     </div>
-                    <h2 class="font-serif font-bold text-2xl sm:text-3xl text-gray-800 tracking-wide uppercase">
+                    <h2 class="font-serif text-4xl lg:text-4xl font-semibold">
                         Struktur Organisasi
                     </h2>
                 </div>
@@ -121,7 +121,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 100-8 4 4 0 000 8zm6 4c0-2.5-2.5-4.5-6-4.5s-6 2-6 4.5"/>
                             </svg>
                         </div>
-                        <h2 class="font-serif font-bold text-xl sm:text-2xl text-gray-800">
+                        <h2 class="font-serif text-4xl lg:text-4xl font-semibold">
                             Kelompok Jabatan Fungsional
                         </h2>
                     </div>

@@ -11,7 +11,7 @@
             {{-- ========================================== --}}
             <div class="text-center mb-16 lg:mb-20">
                 <span class="font-mono text-xs text-[#2F5D45] uppercase tracking-widest mb-3 block font-bold">Jejak Langkah</span>
-                <h2 class="font-serif text-4xl lg:text-5xl font-semibold">Sejarah Kepemimpinan</h2>
+                <h2 class="font-serif text-4xl lg:text-4xl font-semibold">Sejarah Kepemimpinan</h2>
                 <p class="mt-4 text-sm sm:text-base text-[#16241C]/70 max-w-2xl mx-auto">
                     Mengenang kembali dedikasi dan masa bakti para Kepala Balai yang telah memimpin
                     dan membangun BPKH Wilayah XVI Palu dari masa ke masa.
@@ -143,22 +143,26 @@
                 </div>
             </div>
 
-            {{-- ========================================== --}}
-            {{-- MODAL LIGHTBOX (DISEMBUNYIKAN DEFAULT)     --}}
+           {{-- ========================================== --}}
+            {{-- MODAL LIGHTBOX KEPEMIMPINAN                --}}
             {{-- ========================================== --}}
             <div id="galleryLightbox" class="fixed inset-0 z-[100] hidden items-center justify-center px-4" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                {{-- Background Hitam Blur --}}
-                <div class="fixed inset-0 bg-[#16241C]/90 backdrop-blur-sm transition-opacity opacity-0" id="lightboxBg" onclick="closeLightbox()"></div>
 
-                {{-- Kontainer Gambar --}}
+                {{-- Background Hitam Blur (Bisa diklik untuk tutup juga) --}}
+                <div class="fixed inset-0 bg-[#16241C]/95 backdrop-blur-sm transition-opacity opacity-0" id="lightboxBg" onclick="closeLightbox()"></div>
+
+                {{-- TOMBOL X (CLOSE) - Dibuat Fixed di Sudut Kanan Atas Layar --}}
+                <button onclick="closeLightbox()" class="fixed top-4 right-4 md:top-6 md:right-8 z-[110] text-white/70 hover:text-white bg-black/20 hover:bg-black/50 p-2 md:p-3 rounded-full transition-all focus:outline-none">
+                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+                {{-- Kontainer Gambar & Teks --}}
                 <div class="relative z-10 max-w-3xl w-full flex flex-col items-center transform scale-95 opacity-0 transition-all duration-300 ease-out" id="lightboxContent">
-                    {{-- Tombol Tutup --}}
-                    <button onclick="closeLightbox()" class="absolute -top-12 right-0 md:-right-12 text-white hover:text-[#C89B3C] transition-colors p-2 focus:outline-none">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
 
                     {{-- Gambar Full --}}
-                    <img id="lightboxImg" src="" alt="Zoomed Foto" class="w-auto max-h-[70vh] object-contain rounded-xl shadow-2xl border border-white/10">
+                    <img id="lightboxImg" src="" alt="Zoomed Foto" class="w-auto max-h-[65vh] md:max-h-[70vh] object-contain rounded-xl shadow-2xl border border-white/10 mt-8 md:mt-0">
 
                     {{-- Teks Deskripsi Bawah Modal --}}
                     <div class="bg-white rounded-xl p-5 mt-4 w-full max-w-lg text-center shadow-xl border-t-4 border-[#C89B3C]">

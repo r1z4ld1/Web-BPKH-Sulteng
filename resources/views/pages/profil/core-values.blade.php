@@ -23,7 +23,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v18M4 8h5m-5 5h5m6-10v18m0-14h5m-5 5h5"/>
             </svg>
         </div>
-        <h2 class="font-serif font-bold text-2xl sm:text-3xl text-gray-800 tracking-wide uppercase">
+        <h2 class="font-serif text-4xl lg:text-4xl font-semibold">
             Core Values ASN BerAKHLAK
         </h2>
     </div>
@@ -120,7 +120,7 @@
     {{-- Bagian Judul --}}
     <div class="text-center mb-12 sm:mb-16">
         <p class="font-mono text-xs text-highlight font-semibold uppercase tracking-widest mb-2">Teladan Penerapan BerAKHLAK</p>
-        <h2 class="font-serif font-bold text-2xl sm:text-3xl text-gray-800 mb-4 tracking-wide">Pimpinan BPKH Wilayah XVI</h2>
+        <h2 class="font-serif text-4xl lg:text-4xl font-semibold mb-2">Pimpinan BPKH Wilayah XVI</h2>
         <p class="text-sm sm:text-base text-contrast/70 max-w-xl mx-auto leading-relaxed px-4">
             Kepala Balai dan Kepala Seksi yang menjalankan nilai-nilai BerAKHLAK
             dalam memimpin dan melayani setiap hari.
