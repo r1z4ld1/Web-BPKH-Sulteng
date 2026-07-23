@@ -7,6 +7,7 @@
     @include('pages.home.statistik', ['statistikCards' => $statistikCards, 'kawasanHutan' => $kawasanHutan])
     @include('pages.home.berita', ['berita' => $berita])
     @include('pages.home.penghargaan')
+    @include('layouts.partials.logo-instansi')
     {{--@include('pages.home.publikasi', ['publikasi' => $publikasi])
     @include('pages.home.kontak', ['kontak' => $kontak])
     @include ('pages.home.peta', ['peta' => $peta])--}}
