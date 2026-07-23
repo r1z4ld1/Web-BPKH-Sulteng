@@ -28,7 +28,7 @@
 
             {{-- ===== HEADER & TITLE SEPERTI BANNER ===== --}}
             <div class="max-w-3xl mb-12 sm:mb-16">
-                <h1 class="font-sans font-black text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight uppercase leading-[1.1] mb-6">
+                <h1 class="font-serif text-4xl lg:text-4xl font-semibold text-gray-900 tracking-tight uppercase leading-[1.1] mb-6">
                     Bagaimana Alur Proses Pelayanan <br class="hidden sm:block">
                     <span class="text-primary">BPKH Wilayah XVI Palu?</span>
                 </h1>
@@ -125,7 +125,7 @@
                                     <div class="flex-1">
                                         <div class="flex items-center gap-2 mb-2">
                                             <span class="font-bold text-[10px] sm:text-xs uppercase tracking-widest px-2 py-1 rounded-md bg-opacity-10
-                                                         {{ $isPemohon ? 'text-white bg-primary' : 'text-white bg-highlight' }}">
+                                                         {{ $isPemohon ? 'text-black bg-primary' : 'text-black bg-highlight' }}">
                                                 {{ $item['aktor'] }}
                                             </span>
                                         </div>
@@ -165,25 +165,27 @@
             </div>
 
             {{-- CTA --}}
-            <div class="rounded-2xl bg-gradient-to-br from-primary to-gray-900 p-8 sm:p-10 shadow-2xl flex flex-col md:flex-row md:items-center gap-6 justify-between relative overflow-hidden">
-                {{-- Aksen Dekoratif pada CTA --}}
-                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white opacity-5 blur-3xl"></div>
+            <div class="mt-24 w-full">
+                <div class="relative overflow-hidden rounded-3xl bg-contrast shadow-sm p-8 sm:p-10 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-8 group">
 
-                <div class="relative z-10">
-                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Siap mengajukan layanan?</h3>
-                    <p class="text-sm sm:text-base text-gray-400 max-w-lg">Sampaikan permohonan Anda secara mudah melalui POS, Email resmi, atau secara digital melalui formulir SIPADU-16.</p>
+                    <div class="relative z-10 text-center md:text-left max-w-xl">
+                        <h3 class="font-serif text-2xl lg:text-2xl font-semibold text-white mb-3 tracking-tight">Siap mengajukan layanan?</h3>
+                        <p class="text-secondary text-sm sm:text-base leading-relaxed">
+                            Sampaikan permohonan Anda secara mudah melalui POS, Email resmi, atau secara digital melalui formulir <strong class="text-white">SIPADU-16</strong>.
+                        </p>
+                    </div>
+
+                    <div class="relative z-10 shrink-0 w-full md:w-auto">
+                        <a href="{{ route('layanan.pelayanan-terpadu') }}"
+                           class="flex items-center justify-center gap-3 w-full md:w-auto px-8 py-4 bg-action hover:bg-action-dark text-contrast rounded-xl font-bold text-sm text-2xl transition-all duration-300 ease-out hover:-translate-y-1">
+                            Ajukan Layanan Sekarang
+                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-
-                <a href="{{--{{ route('layanan.pelayanan-terpadu') }} --}}"
-                   class="relative z-10 inline-flex items-center justify-center gap-2 rounded-xl bg-action px-8 py-4 text-sm font-bold text-contrast shrink-0
-                          transition-all duration-300 hover:bg-white hover:text-action hover:shadow-lg hover:-translate-y-1 group">
-                    Ajukan Layanan Sekarang
-                    <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
-                    </svg>
-                </a>
             </div>
-
         </div>
     </section>
 
