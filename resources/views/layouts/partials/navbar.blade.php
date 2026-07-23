@@ -11,7 +11,7 @@
     $menuLayanan = [
         ['label' => 'Alur Pelayanan', 'url' => route('layanan.alur')],
         ['label' => 'Proses PPKH', 'url' => route('layanan.ppkh')],
-        ['label' => 'Sistem Pelayanan Terpadu', 'url' => route('layanan.sipadu')],
+        ['label' => 'Sistem Pelayanan Terpadu', 'url' => route('layanan.pelayanan-terpadu')],
         ['label' => 'Survei Kepuasan Masyarakat', 'url' => route('layanan.survei')],
         ['label' => 'Kebijakan Mutu', 'url' => route('layanan.kebijakan-mutu')],
     ];
@@ -22,11 +22,11 @@
         ['label' => 'Dokumentasi Kegiatan', 'url' => route('publikasi.dokumentasi')],
     ];
 
-    $menuKontak = [
-        ['label' => 'Lentera BPKH 16 Palu', 'url' => route('kontak.whatsapp')],
-        ['label' => 'Survei Persepsi Anti Korupsi', 'url' => route('kontak.ipk')],
-        ['label' => 'Pengaduan Masyarakat', 'url' => route('kontak.pengaduan')],
-    ];
+   $menuKontak = [
+    ['label' => 'Lentera BPKH 16', 'url' => route('kontak.lentera')],
+    ['label' => 'Survei Persepsi Anti Korupsi', 'url' => route('kontak.survei-anti-korupsi')],
+    ['label' => 'Pengaduan Masyarakat', 'url' => route('kontak.pengaduan')],
+];
 @endphp
 
 <header

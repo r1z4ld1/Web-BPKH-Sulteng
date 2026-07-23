@@ -21,7 +21,6 @@
     <main>
         @yield('content')
     </main>
-
     @include('layouts.partials.footer')
 
     @stack('scripts')
