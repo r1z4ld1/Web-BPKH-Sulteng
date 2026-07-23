@@ -3,31 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\View\View;
+use App\Support\BeritaData;
 
 class HomeController extends Controller
 {
     public function index(): View
     {
-        $statistikCards = [
+$statistikCards = [
     ['icon' => 'ruler', 'nilai' => '540 km', 'label' => 'Panjang batas kawasan hutan'],
     ['icon' => 'pin', 'nilai' => '1.240', 'label' => 'Pal batas terpasang'],
     ['icon' => 'building', 'nilai' => '12', 'label' => 'Kabupaten/kota wilayah kerja'],
 ];
 $layanan = [
-    ['icon' => 'clipboard', 'judul' => 'Layanan', 'deskripsi' => 'Permohonan data dan layanan teknis kawasan hutan.', 'route' => 'layanan.index'],
+    ['icon' => 'clipboard', 'judul' => 'Layanan', 'deskripsi' => 'Permohonan data dan layanan teknis kawasan hutan.', 'route' => 'layanan.pelayanan-terpadu'],
     ['icon' => 'file', 'judul' => 'Publikasi & Peraturan', 'deskripsi' => 'Dokumen resmi, regulasi, dan hasil kajian.', 'route' => 'publikasi.peraturan'],
     ['icon' => 'news', 'judul' => 'Berita', 'deskripsi' => 'Kabar dan kegiatan terbaru dari kantor.', 'route' => 'berita.index'],
     ['icon' => 'message', 'judul' => 'Pengaduan', 'deskripsi' => 'Sampaikan masukan atau laporan kepada kami.', 'route' => 'kontak.pengaduan'],
 ];
 
-        $berita = [
-            ['judul' => 'Penataan batas kawasan hutan Kabupaten Sigi rampung', 'tanggal' => '2 Juli 2026', 'kategori' => 'Kegiatan'],
-            ['judul' => 'Koordinasi lintas instansi soal tata batas kawasan', 'tanggal' => '28 Juni 2026', 'kategori' => 'Koordinasi'],
-            ['judul' => 'Pelatihan pemetaan kawasan hutan bagi staf lapangan', 'tanggal' => '20 Juni 2026', 'kategori' => 'Pelatihan'],
-        ];
+$berita = array_slice(BeritaData::all(), 0, 4);
+//contoh kode diganti dengan kode dibawah ini agar berita terbaru muncul di halaman home beranda
+//$berita = BeritaData::orderBy('created_at', 'desc')->take(4)->get();
 
 
-     $layananUnggulan = [
+$layananUnggulan = [
         [
             'nomor' => '01',
             'warna' => 'primary',

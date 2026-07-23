@@ -25,7 +25,7 @@ class ProfilController extends Controller
                 'deskripsi' => 'Mengikuti perubahan nomenklatur kementerian, BPKH berada di bawah koordinasi Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan.',
             ],
             [
-                'tahun' => 'Periode 04 (2014--2016)',
+                'tahun' => 'Periode 04 (2014-2016)',
                 'judul' => 'Modernisasi layanan publik',
                 'deskripsi' => 'Menghadirkan layanan digital untuk mempermudah akses masyarakat terhadap informasi dan permohonan terkait kawasan hutan.',
             ],
@@ -256,9 +256,9 @@ public function coreValues(): View
 
     $pejabat = [
         ['nama' => 'Victor W.R. Lembang S.Hut.,M.Si.', 'jabatan' => 'Kepala Balai', 'foto' => 'kepala-balai.png'],
-        ['nama' => 'Hery Prastowo Budi S.P.,M.P.W.P.', 'jabatan' => 'Kepala Seksi Sumber Daya Hutan', 'foto' => 'kasi-sdh.png'],
-        ['nama' => 'Prasti Sirappa S.P.,M.Si.', 'jabatan' => 'Kepala Seksi Pengukuhan dan Perencanaan Kawasan Hutan', 'foto' => 'kasi-pkh.png'],
         ['nama' => 'Dr. Pria Kurnijanto S.Hut.,M.Si.', 'jabatan' => 'Kepala Subbagian Tata Usaha', 'foto' => 'kasubbag-tu.png'],
+        ['nama' => 'Prasti Sirappa S.P.,M.Si.', 'jabatan' => 'Kepala Seksi Pengukuhan dan Perencanaan Kawasan Hutan', 'foto' => 'kasi-pkh.png'],
+        ['nama' => 'Hery Prastowo Budi S.P.,M.P.W.P.', 'jabatan' => 'Kepala Seksi Sumber Daya Hutan', 'foto' => 'kasi-sdh.png'],
     ];
 
     return view('pages.profil.core-values', compact('values', 'pejabat'));
