@@ -13,14 +13,14 @@
             ['id' => 0, 'judul' => 'Peningkatan Tata Kelola Berkesinambungan', 'img' => asset('images/sertifikat/sertifikat-01.jpg'), 'orientasi' => 'landscape'],
             ['id' => 1, 'judul' => 'Piagam Pencanangan Pembangunan Zona Integritas', 'img' => asset('images/sertifikat/sertifikat-02.jpg'), 'orientasi' => 'landscape'],
             ['id' => 2, 'judul' => 'Pengelolaan Dan Wasdal Barang Milik Negara', 'img' => asset('images/sertifikat/sertifikat-03.jpg'), 'orientasi' => 'landscape'],
-            ['id' => 3, 'judul' => 'Sertifikat ISO 9001:2015', 'img' => asset('images/sertifikat/sertifikat-potrait-01.jpg'), 'orientasi' => 'portrait'], // Portrait 1
-            ['id' => 4, 'judul' => 'Piagam Penghargaan Lomba Kebersihan & Keindahan Antar SKPD', 'img' => asset('images/sertifikat/sertifikat-04.jpg'), 'orientasi' => 'landscape'],
-            ['id' => 5, 'judul' => 'Piagam Penghargaan Lomba Kebersihan & Keindahan Antar SKPD', 'img' => asset('images/sertifikat/sertifikat-05.jpg'), 'orientasi' => 'landscape'],
-            ['id' => 6, 'judul' => 'Capaian Kinerja Pelaksana Kegiatan & Anggran (DIPA)', 'img' => asset('images/sertifikat/sertifikat-06.jpg'), 'orientasi' => 'landscape'],
-            ['id' => 7, 'judul' => 'Sertifikat ISO 9001:2015', 'img' => asset('images/sertifikat/sertifikat-potrait-02.jpg'), 'orientasi' => 'portrait'], // Portrait 2
-            ['id' => 8, 'judul' => 'Sertifikat Capaian Realisasi Keuangan (DIPA)', 'img' => asset('images/sertifikat/sertifikat-07.jpg'), 'orientasi' => 'landscape'],
-            ['id' => 9, 'judul' => 'Sertifikat Maklumat Pelayanan', 'img' => asset('images/sertifikat/sertifikat-08.jpg'), 'orientasi' => 'landscape'],
-            ['id' => 10, 'judul' => 'Piagam Penghargaan Satuan Kerja Unit Pelaksana Teknis Terbaik', 'img' => asset('images/sertifikat/sertifikat-09.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 3, 'judul' => 'Piagam Penghargaan Lomba Kebersihan & Keindahan Antar SKPD', 'img' => asset('images/sertifikat/sertifikat-04.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 4, 'judul' => 'Piagam Penghargaan Lomba Kebersihan & Keindahan Antar SKPD', 'img' => asset('images/sertifikat/sertifikat-05.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 5, 'judul' => 'Capaian Kinerja Pelaksana Kegiatan & Anggran (DIPA)', 'img' => asset('images/sertifikat/sertifikat-06.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 6, 'judul' => 'Sertifikat Capaian Realisasi Keuangan (DIPA)', 'img' => asset('images/sertifikat/sertifikat-07.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 7, 'judul' => 'Sertifikat Maklumat Pelayanan', 'img' => asset('images/sertifikat/sertifikat-08.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 8, 'judul' => 'Piagam Penghargaan Satuan Kerja Unit Pelaksana Teknis Terbaik', 'img' => asset('images/sertifikat/sertifikat-09.jpg'), 'orientasi' => 'landscape'],
+            ['id' => 9, 'judul' => 'Sertifikat ISO 9001:2015', 'img' => asset('images/sertifikat/sertifikat-potrait-01.jpg'), 'orientasi' => 'portrait'], // Portrait 1
+            ['id' => 10, 'judul' => 'Sertifikat ISO 9001:2015', 'img' => asset('images/sertifikat/sertifikat-potrait-02.jpg'), 'orientasi' => 'portrait'], // Portrait 2
         ];
     @endphp
 

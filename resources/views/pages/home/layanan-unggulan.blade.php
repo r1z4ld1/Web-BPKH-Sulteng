@@ -54,8 +54,7 @@
     <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div class="flex items-end justify-between mb-8">
             <div>
-                <p class="font-mono text-xs text-highlight mb-2">6 Jenis Layanan Publik</p>
-                <h2 class="font-serif font-medium text-xl sm:text-2xl">Layanan Unggulan BPKH Wilayah XVI</h2>
+                <h2 class="font-serif font-medium text-xl sm:text-2xl">6 Jenis Layanan BPKH Wilayah XVI</h2>
             </div>
 
             {{-- Panah navigasi - desktop & tablet --}}

@@ -3,9 +3,9 @@
     {{-- 1. LAPISAN FOTO LATAR & OVERLAY --}}
     <div class="absolute inset-0 z-0">
         <img
-            src="{{ asset('images/hero/forest.jpg') }}"
+            src="{{ asset('images/hero/Foto-Kantor.jpeg') }}"
             alt="Kawasan hutan di wilayah kerja BPKH Kota Palu"
-            class="w-full h-full object-cover object-[center_65%] sm:object-[center_55%]"
+            class="w-full h-full object-cover object-[center_65%] sm:object-[center_25%]"
             loading="eager"
         >
         {{-- Overlay gradasi gelap menggunakan Hijau Tinta Gelap (#16241C) untuk kekuatan kontras teks --}}
@@ -72,22 +72,21 @@
 
             {{-- Deskripsi Singkat --}}
             <p class="text-white/85 text-sm sm:text-base lg:text-lg leading-relaxed mt-4 max-w-xl">
-                Kami melaksanakan penataan batas, pengukuran, dan pemetaan kawasan hutan di Sulawesi Tengah
-                dan sekitarnya, agar status dan luasan kawasan hutan memiliki kepastian hukum.
+                Kami melaksanakan penataan batas, pengukuran, </br>dan pemetaan kawasan hutan di Sulawesi Tengah
+            </br>dan sekitarnya, agar status dan luasan kawasan hutan </br> memiliki kepastian hukum.
             </p>
 
             {{-- Kelompok CTA (Tombol Aksi) --}}
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mt-8 sm:mt-10">
                 {{-- Tombol Utama Menggunakan Emas Senja (#C89B3C) --}}
-                <a href="{{ route('kontak.janji-temu') }}"
+                <a href="{{ route('kontak.lentera') }}"
                    class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#C89B3C] px-7 py-3.5 text-sm font-semibold text-[#16241C] shadow-md transition-all duration-300 hover:bg-[#C89B3C]/90 hover:-translate-y-0.5 active:translate-y-0">
-                    Janji Temu Offline
+                    Lentera BPKH 16
                 </a>
-
                 {{-- Tombol Sekunder Border Transparan --}}
-                <a href="{{ route('layanan.index') }}"
+                <a href="{{ route('layanan.survei') }}"
                    class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/40 bg-white/5 backdrop-blur-xs px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-[#C89B3C] hover:text-[#C89B3C] hover:bg-white/10">
-                    Ajukan Layanan
+                    Survei Kepuasan Masyarakat
                     <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
                     </svg>

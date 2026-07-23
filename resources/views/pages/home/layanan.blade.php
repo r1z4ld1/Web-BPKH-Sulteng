@@ -7,26 +7,69 @@
     ];
 @endphp
 
-<section class="bg-base py-14 sm:py-16 lg:py-20">
-    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <h2 class="font-serif font-medium text-xl sm:text-2xl mb-8">Akses Cepat</h2>
+<section class="bg-base py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 relative z-10 ">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5">
+        {{-- Header Section --}}
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 sm:mb-12 gap-4">
+            <div>
+                <span class="inline-block text-primary font-bold text-xs tracking-widest uppercase mb-2">
+                    Jalan Pintas
+                </span>
+                <h2 class="font-serif font-semibold text-2xl sm:text-3xl text-contrast">
+                    Layanan Akses Cepat
+                </h2>
+            </div>
+            <p class="text-sm text-contrast/60 max-w-xs sm:text-right">
+                Pilih layanan di bawah ini untuk menuju ke halaman yang Anda butuhkan dengan cepat.
+            </p>
+        </div>
+
+        {{-- Grid Cards --}}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 ">
             @foreach ($layanan as $item)
                 <a href="{{ route($item['route']) }}"
-                   class="group rounded-xl border border-contrast/10 bg-white/40 p-5 sm:p-6
-                          transition-all duration-200 ease-smooth hover:border-secondary hover:-translate-y-1 hover:shadow-sm">
-                    <div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center
-                                transition-colors duration-200 group-hover:bg-primary">
-                        <svg class="w-5 h-5 text-primary transition-colors duration-200 group-hover:text-white"
-                             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="{{ $iconPaths[$item['icon']] }}"/>
-                        </svg>
+                   class="group relative flex flex-col h-full p-6 sm:p-7 rounded-2xl bg-white border border-contrast/5 shadow-sm
+                          hover:shadow-xl hover:border-primary/20 hover:-translate-y-1.5 transition-all duration-300 ease-out overflow-hidden">
+
+                    {{-- Dekorasi Latar Belakang Blur saat Hover (Mewah & Modern) --}}
+                    <div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl
+                                transition-transform duration-500 ease-out group-hover:scale-[2.5] group-hover:bg-primary/10"></div>
+
+                    {{-- Ikon Utama & Ikon Panah --}}
+                    <div class="flex justify-between items-start mb-8 relative z-10">
+                        {{-- Ikon Layanan --}}
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center
+                                    transition-all duration-300 ease-out group-hover:scale-110 group-hover:-rotate-3 group-hover:bg-primary group-hover:shadow-md">
+                            <svg class="w-6 h-6 text-primary transition-colors duration-300 group-hover:text-white"
+                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="{{ $iconPaths[$item['icon']] }}"/>
+                            </svg>
+                        </div>
+
+                        {{-- Ikon Navigasi Panah (Kanan Atas) --}}
+                        <div class="w-8 h-8 rounded-full border border-contrast/10 flex items-center justify-center bg-white/50
+                                    transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-contrast/30 transition-all duration-300 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </div>
                     </div>
-                    <p class="font-medium text-sm sm:text-base mt-4">{{ $item['judul'] }}</p>
-                    <p class="text-xs sm:text-sm text-contrast/60 mt-1.5 leading-relaxed">{{ $item['deskripsi'] }}</p>
+
+                    {{-- Konten Teks --}}
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <h3 class="font-semibold text-lg text-contrast mb-2 transition-colors duration-300 group-hover:text-primary">
+                            {{ $item['judul'] }}
+                        </h3>
+                        <p class="text-sm text-contrast/60 leading-relaxed line-clamp-3">
+                            {{ $item['deskripsi'] }}
+                        </p>
+                    </div>
+
                 </a>
             @endforeach
         </div>
+
     </div>
 </section>

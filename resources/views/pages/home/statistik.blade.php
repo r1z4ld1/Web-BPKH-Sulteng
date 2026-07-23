@@ -28,7 +28,7 @@
                     <p class="font-mono text-3xl sm:text-4xl text-white leading-none">{{ $kawasanHutan['total_ha'] }}<span class="text-base text-secondary ml-1">ha</span></p>
                     <p class="text-xs text-secondary mt-1">Total kawasan hutan wilayah kerja</p>
                 </div>
-                <a href="{{ route('layanan.peta') }}"
+                <a href="{{ route('peta.index') }}"
                    class="hidden sm:inline-flex items-center gap-2 rounded-lg border border-white/20 px-5 py-2.5 text-sm font-medium text-white
                           transition-all duration-200 ease-smooth hover:border-action hover:text-action shrink-0">
                     Lihat Peta Interaktif
